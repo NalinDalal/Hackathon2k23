@@ -1,0 +1,127 @@
+<%- include("header.ejs")%>
+<style>
+    .categories section:hover{
+        scale:1.2;
+        transition: 0.5s;
+    }
+    .advertize .advertise img{
+        height: 30vh;
+        width: 20vw;
+    }
+    .dating{
+        background-image: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/gold-ring-sale-ad-design-template-0b96f82a420e61a57b4bd01761202576_screen.jpg?ts=1614405140");
+        background-size: contain;
+    }
+    .birthday{
+        background-image: url("https://previews.123rf.com/images/mnaufal/mnaufal1901/mnaufal190100847/115908177-happy-birthday-super-sale-banner-online-shop-website-promotion.jpg");
+        background-size: auto;
+    }
+    .anniversary{
+        background-image: url("https://www.shutterstock.com/image-vector/anniversary-celebration-poster-gifts-confetti-260nw-1755710963.jpg");
+        
+        background-size: conatin;
+
+    }
+    .wedding{
+        background-image: url("https://img.freepik.com/free-vector/hand-drawn-leaves-wedding-sale-banner-template_23-2149417849.jpg?size=626&ext=jpg&ga=GA1.2.1886796794.1697068800&semt=ais");
+        
+        background-size:auto;
+    }
+    .ocassions{
+        background-image: url("https://static.vecteezy.com/system/resources/previews/014/242/508/original/sale-product-banner-podium-platform-sale-promotion-with-a-discount-offer-on-a-special-occasion-give-voucher-poster-or-background-free-vector.jpg");
+        
+        background-size: cover;
+    }
+    .couples{
+        background-image: url("https://static.vecteezy.com/system/resources/previews/001/995/107/original/valentines-day-sale-banner-couple-realistic-3d-red-and-pink-heart-shaped-balloons-pierced-by-cupids-golden-arrow-and-confetti-background-flyer-poster-greeting-card-vector.jpg");
+        
+        background-size: cover;
+    }
+</style>
+<span>
+    <div class="categories">
+        <section>
+            <img height="50" src="data:image/jpeg;base64,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" alt="">
+            <h4>Dating</h4>
+        </section>
+        <section>
+            <img height="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLTgxut8bnzcrX_VJkP62KgtGG0_TYGo2cZg&usqp=CAU" alt="">
+            <h4>Birthday</h4>
+        </section>
+        <section>
+            <img height="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxPCf2thf3eSmus0f_sjM_TG5CZbOTS3UKXg&usqp=CAU" alt="">
+            <h4>Anniversary</h4>
+        </section>
+        <section>
+            <img src="https://rukminim1.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100" alt="">
+            <h4>Electronic Gifts</h4>
+        </section>
+        <section>
+            <img src="https://rukminim1.flixcart.com/flap/64/64/image/dff3f7adcf3a90c6.png?q=100" alt="">
+            <h4>For Babies</h4>
+        </section>
+        <section>
+            <img height="50" src="data:image/jpeg;base64,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" alt="">
+            <h4>Couples</h4>
+        </section>
+    </div>
+</span>
+<span>
+    <div class="advertize">
+        <button><h1><</h1></button>
+        <div class="advertise">
+            <a href="https://www.nike.com/sg/t/court-borough-low-recraft-older-shoes-cg2qJ0/DV5456-003"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ac0e607d-ee64-4418-a0fd-dd4cd0aebcd6/court-borough-low-recraft-older-shoes-cg2qJ0.png" alt="Nike Sports">
+
+            </a>
+        </div>
+        <div class="advertise">
+            <a href="https://www.nike.com/sg/t/air-jordan-1-low-older-shoes-xLzJc6/553560-068"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e87c3c4e-9a06-4044-99b1-7abf5b45dcd0/air-jordan-1-low-older-shoes-xLzJc6.png"></a>
+        </div>
+        <div class="advertise">
+            <a href="https://www.nike.com/sg/t/jordan-1-mid-alt-younger-shoes-8cf67r/DR9745-106">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/92ab8071-2064-458b-8e88-d96b6eb9df6c/jordan-1-mid-alt-younger-shoes-8cf67r.png">
+            </a>
+        </div>
+        <div class="advertise">
+            <a href="https://www.nike.com/sg/t/court-borough-low-recraft-older-shoes-cg2qJ0/DV5456-104">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4549951c-ce06-4b27-a6cd-6738f94904d6/court-borough-low-recraft-older-shoes-cg2qJ0.png"></a>
+        </div>
+        
+        
+        <div class="advertise"></div>
+    <!-- <h1>Advertizing Space</h1> -->
+    <button><h1>></h1></button>
+    </div>
+</span>
+<span>
+    <div class="dating">
+        <h1>Dating</h1>
+        
+    </div>
+</span>
+<span>
+    <div class="birthday">
+        <h1>Birthday</h1>
+    </div>
+</span>
+<span>
+    <div class="anniversary">
+        <h1>Anniversary</h1>
+    </div>
+</span>
+<span>
+    <div class="wedding">
+        <h1>Wedding</h1>
+    </div>
+</span>
+<span>
+    <div class="ocassions">
+        <h1>Ocassions</h1>
+    </div>
+</span>
+<span>
+    <div class="couples">
+        <h1>Couples</h1>
+    </div>
+</span>
+<%- include("footer.ejs")%>
